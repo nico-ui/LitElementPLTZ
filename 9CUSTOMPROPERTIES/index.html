@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOM PROPERTIES</title>
+    <style>
+        my-element{
+            --primary-color: blue;
+        }
+        .segundo{
+            --primary-color:salmon;
+            --heading-secondary: 14px;
+        }
+        .tercero{
+            --heading-primary: 50px;
+            --secondary-color:lime;
+        }
+    </style>
+</head>
+<body>
+    <my-element></my-element>
+    <my-element class="segundo"></my-element>
+    <my-element class="tercero"></my-element>
+    <script type="module" src="./my-element.js"></script>
+</body>
+</html>
