@@ -10,12 +10,14 @@ export class MyElement extends HTMLElement {
         template.innerHTML = `
             <img src=""></img>
             <section>
-                <h1>
-                    <slot name="titulo"></slot>
-                </h1>
-                <h2>
-                    <slot name="subtitulo"></slot>    
-                </h2>
+                <div class="titulo">
+                    <h1>
+                        <slot name="titulo"></slot>
+                    </h1>
+                    <h3>
+                        <slot name="subtitulo"></slot>    
+                    </h3>
+                </div>
                 <p>
                     <slot name="parrafo"></slot>
                 </p>
@@ -46,6 +48,10 @@ export class MyElement extends HTMLElement {
                 section div{
                     display:flex;
                 }
+                .titulo{
+                    display:flex;
+                    background: red;
+                }
                 
             </style>
         `;
@@ -59,4 +65,4 @@ export class MyElement extends HTMLElement {
         this.render();
     }
 }
-customElements.define('my-element', MyElement);
+customElements.define('product-card', MyElement);
