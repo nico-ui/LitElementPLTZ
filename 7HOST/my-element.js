@@ -47,7 +47,7 @@ class MyElement extends HTMLElement {
                 } */
                 :host-context(article.card){
                     display: block;
-                    background: red;
+                    background: black;
                     width: 100%;
                     max-width: 100%;
                 }
