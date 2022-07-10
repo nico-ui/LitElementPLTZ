@@ -12,9 +12,9 @@ export class MyElement extends HTMLElement {
         if (attr === "img") {
             this.img = newVal;
         }
-        if (attr === "title") {
-            this.title = newVal;
-        }
+        if(attr === "title" && oldVal !== newVal) {
+            this.title = newVal
+}
         if (attr === "price") {
             this.price = newVal;
         }
